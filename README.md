@@ -7,6 +7,7 @@ Run bert/roberta model
   python bert/main.py --trainset data/coqa-bert-train.json --devset data/coqa-bert-dev.json --n_history 1 --dir experiments/test
 ```
 
+## --------------------------UPDATE 2020/12/5-------------------------------
 
 We provide several baselines: conversational models, extractive reading comprehension models and their combined models for the [CoQA challenge](https://stanfordnlp.github.io/coqa/). See more details in the [paper](https://arxiv.org/abs/1808.07042). We also provide [instructions](codalab.md) on how to run pretrained models on Codalab -- our platform for evaluation on the test set.
 
