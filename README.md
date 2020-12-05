@@ -1,4 +1,13 @@
-# coqa-baselines
+# coqa-RoBERTa-baselines
+
+Run bert/roberta model
+```bash
+  python scripts/gen_bert_data.py --data_file data/coqa-train-v1.0.json --output_file data/coqa-bert-train.json
+  python scripts/gen_bert_data.py --data_file data/coqa-dev-v1.0.json --output_file data/coqa-bert-dev.json
+  python bert/main.py --trainset data/coqa-bert-train.json --devset data/coqa-bert-dev.json --n_history 1 --dir experiments/test
+```
+
+
 We provide several baselines: conversational models, extractive reading comprehension models and their combined models for the [CoQA challenge](https://stanfordnlp.github.io/coqa/). See more details in the [paper](https://arxiv.org/abs/1808.07042). We also provide [instructions](codalab.md) on how to run pretrained models on Codalab -- our platform for evaluation on the test set.
 
 As we use the [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) library for all our seq2seq experiments, please use the following command to clone our repository.
